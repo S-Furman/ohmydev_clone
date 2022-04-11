@@ -1,0 +1,80 @@
+#add-article {
+  display: flex;
+}
+
+#articles-container {
+  width: 80%;
+  display: inline-block;
+}
+
+h2 {
+  display: inline-block;
+  font-size: 32px;
+}
+
+h2 + div {
+  display: inline-block;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input#create-article {
+  flex: 1;
+}
+
+button {
+  cursor: pointer;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-container {
+  background-color: white;
+}
+
+div > button {
+  background-color: transparent;
+  padding: 10px 40px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+div > button.active {
+  border: 1px solid black;
+}
+
+div + button {
+  background-color: transparent;
+  border: none;
+}
+
+
+button > img {
+  width: 20px;
+  margin-right: 5px;
+}
+
+#create-article {
+  border: none;
+  border-radius: 10px;
+  vertical-align: top;
+  height: 60px;
+  margin-left: 15px;
+}
+
+#user-icon-container {
+  padding: 15px;
+  background: white;
+  display: inline-block;
+  border-radius: 10px;
+  height: 30px;
+
+  & > img {
+    width: 30px;
+  }
+}
